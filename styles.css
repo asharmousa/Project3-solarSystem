@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* خلفية الصفحة */
+body {
+    background-color: #dedbd9;
+    font-family: 'Georgia', serif;
+    color: #6e5b54;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 90px;
+    background-color: #dedbd9;
+}
+
+.logo {
+    width: 120px;
+}
+
+.navbar nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #6e5b54;
+    font-size: 15px;
+}
+
+.navbar nav a.active {
+    text-decoration: underline;
+}
+
+/* ================= ABOUT BOX ================= */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 40px auto;
+    padding: 80px 90px;
+
+    background-color: #D9D9D9;
+    border-radius: 30px;
+
+    /* ظل خفيف ليبين البوكس */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* النص */
+.about-text {
+    width: 32%;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ================= IMAGES ================= */
+.about-images {
+    position: relative;
+    width: 68%;
+    height: 420px; /* على حدود الصور */
+    margin-left:200px;
+}
+
+.img {
+    position: absolute;
+    width: 260px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+/* التداخل */
+.img-1 {
+    left: 60px;
+    top: 40px;
+    z-index: 3; /* فوق */
+}
+
+.img-2 {
+    left: 240px;
+    top: 0;
+    z-index: 2;
+}
+
+.img-3 {
+    left: 420px;
+    top: 40px;
+    z-index: 1;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 90px;
+    background-color: #dedbd9;
+    font-size: 14px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    margin-bottom: 6px;
+    color: #6e5b54;
+}
